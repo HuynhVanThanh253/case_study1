@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Tiếng việt</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="dauvao"></td>
+            <td><button value="dich" onclick="dichchu()">Dịch</button></td>
+        </tr>
+        <tr>
+            <th >Tiếng Anh</th>
+        </tr>
+        <tr>
+            <td id="daura"></td>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+    <script>
+        let a = ["gà","vịt","chó","mèo","heo"];
+        let b = ["chicken", "duck", "dog", "cat", "pig"];
+        function dichchu(){
+            let k = document.getElementById("dauvao").value;
+            let index = a.indexOf(k);
+            if (index == -1){
+                document.getElementById("daura").innerHTML=` <br> từ bạn cần dịch không tồn tại`;
+            } else{
+                document.getElementById("daura").innerHTML=`<br> ${b[index]}`;
+            }
+            
+        }
+    
+    </script>
+ </body>
+</html>

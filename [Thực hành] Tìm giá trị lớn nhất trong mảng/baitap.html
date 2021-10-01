@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [15, 79, 2, 42, 36, 78];
+        let max = array[0];
+        let index = 0;
+        let i;
+        for (i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+                index = i;
+            }
+        }
+        // for (let i = 1; i < numbers.length; i++) {
+        //     if (numbers[i] > max) {
+        //         max = numbers[i];
+        //         index = i;
+        //     }
+        // }
+        // document.write(`số lớn nhất là : ${max} vị trí index là : ${index}`);
+        alert("max: " + max + " at position " + index);
+    </script>
+</body>
+
+</html>

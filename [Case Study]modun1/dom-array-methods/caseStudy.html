@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="caseStudy.css" />
+  <title>spending list</title>
+</head>
+<body>
+  <h1>Daily spending list</h1>
+  <div class="container">
+    <aside>
+      <input type="text" placeholder="Category" id="themviec">
+      <input type="number" placeholder="Amount" id="themtien">
+      <button id="add" onclick="them()">Add</button>
+      <!-- <button id="show-millionaires">Show Only Millionaires 💵</button> -->
+      <!-- <button id="sort">từ cao đến thấp↓</button> -->
+      <button id="tinhtong" onclick="tinhtong()">Total</button>
+      <button id="Reset" onclick="resetValue()">Reset</button>
+    </aside>
+    <div id="main">
+      <h2><strong>List</strong>Money</h2>
+      <table>
+        <tr>
+          <td>
+            <div id="hienviec">
+              <table border="0" id="tableview"></table>
+            </div>
+          </td>
+          <td>
+            <div id="hientien">
+              <table border="0" id="tableview2"></table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <div id="displaytong">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="caseStudy.js"></script>
+</body>
+
+</html>

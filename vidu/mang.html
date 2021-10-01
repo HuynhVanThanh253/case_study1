@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <h1>thanh</h1>
+    <input type="text" id="nhap" />
+    <input type="button" id="nhapmang" value="add" onclick="nhapdulieuvaomang();" />
+    <input type="button" id="hienmang" value="Dislay" onclick="hiendulieucuamang();" />
+    <div id="noihien"></div>
+    <script> -->
+        let x = 0;
+        let array = [];
+        let e = ' ';
+        function nhapdulieuvaomang() {
+            array[x] = document.getElementById("nhap").value;
+            alert("số" + array[x] + "số thứ tự" + x);
+            x++;
+            document.getElementById("nhap").value = " ";
+        }
+        function hiendulieucuamang() {
+            for( i=0; i< array.length; i++){
+            e +=("ssố thứ tự" + i + "số" + array[i]+ "<br>");
+           
+            }
+            document.getElementById("noihien").innerHTML = e;
+            
+
+        } -->
+        let a = [1, 2, 3, 4, 5, 6, 7, 8];
+        let fi = 0;
+        let la = a.lenght - 1;
+        while (fi > la) {
+            let b = a[fi];
+            a[fi] = a[la];
+            a[la] = b;
+            fi++;
+            la--;
+        }
+        document.write(a);
+        
+    </script>
+</body>
+
+</html>

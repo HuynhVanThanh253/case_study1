@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("điểm kiểm tra"));
+        let b = Number(prompt("điểm thi giữa kỳ"));
+        let c = Number(prompt("điểm thi cuối kỳ"));
+        let i = ((a + b + c) / 3);
+        if (i >= 9) {
+            document.write("điểm TB là :" + i + "<br>" + " học sinh xuất sắc");
+        }
+             else if (i >= 8) {
+                document.write("điểm TB là :" + i + "<br>" + " học sinh giỏi");
+                }
+                    else if (i >= 7.5) {  
+                        document.write("điểm TB là :" + i + "<br>" + " học sinh khá");
+                        }
+                            else if (i >= 5) {
+                                document.write("điểm TB là :" + i + "<br>" + " học sinh tb");
+                                }
+                                    else document.write("điểm TB là :" + i + "<br>" + " học sinh yếu");
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            width: 100px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+            <td id="name"></td>
+        </tr>
+    </table>
+    <script>
+        let i;
+        let j;
+        let text = " ";
+        let c = 0;
+        for (i=2; i<=9; i++){
+            for (j =1; j<=9; j++){
+                text += i +" * "+ j + "="+ i*j + "<br>";  
+            }
+        }
+        document.getElementsByTagName("td")[c].innerHTML=text;
+    </script>
+</body>
+<!-- <h2>JavaScript Loops</h2>
+<p id="demo"></p>
+<script>
+    let text = "";
+    let i;
+    for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text; -->
+<!-- </html> --> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            font-size: 15px;color: darkblue;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>BẢNG CỬU CHƯƠNG</h1>
+    <script>
+        let i;
+        let sout ;
+        let j ;
+        sout = "<table border='1' width='600' cellspacing='0' cellpadding='3'>"
+        for (i = 1; i <= 9; i++) {
+            sout = sout + "<tr>";
+            for (j = 2; j <= 9; j++) {
+                sout = sout + "<td>" + j +" x "+ i + "="+ i*j + "<br>"+ "</td>";
+            }
+            sout = sout + "</tr>";
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+    </script>
+</body>
+</html>

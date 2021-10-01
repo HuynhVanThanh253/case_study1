@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+        do {
+            var retype = false;
+            let i = Number(prompt("Nhập nhiệt độ hiện tại :"))
+            if (i > 100) {
+            alert("hãy giảm nhiệt độ");
+            retype = true;
+            }
+        else if (20 > i) {
+                document.write("Hãy tăng nhiệt độ");
+            retype = true;
+            }
+            else document.write("ok")
+        }
+        while (retype);
+
+    </script>
+</body>
+
+</html>
